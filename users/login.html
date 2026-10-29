@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Masuk ke Laporin untuk mengirim dan memantau pengaduan fasilitas sekolah."
+    />
+    <title>Masuk — Laporin</title>
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body class="min-h-screen bg-slate-50 font-sans text-slate-900 antialiased">
+    <main class="flex min-h-screen items-center justify-center p-4 sm:p-8">
+      <div class="grid w-full max-w-5xl overflow-hidden rounded-3xl bg-white shadow-xl shadow-slate-200/70 lg:min-h-[640px] lg:grid-cols-[1.05fr_0.95fr]">
+        <section class="relative hidden overflow-hidden bg-[#102b4e] p-10 text-white lg:flex lg:flex-col lg:justify-between xl:p-14">
+          <div class="absolute -right-24 -top-20 h-80 w-80 rounded-full border border-white/10"></div>
+          <div class="absolute -right-10 -top-6 h-52 w-52 rounded-full border border-white/10"></div>
+          <div class="absolute -bottom-28 -left-20 h-80 w-80 rounded-full bg-cyan-400/10"></div>
+          <div class="relative">
+            <a href="./login.html" class="inline-flex items-center gap-3 text-xl font-bold tracking-tight text-white">
+              <span class="flex h-11 w-11 items-center justify-center rounded-2xl bg-cyan-300 text-[#102b4e]">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 3.5 20 7v5.2c0 4.1-2.8 7.8-8 9.3-5.2-1.5-8-5.2-8-9.3V7l8-3.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                  <path d="m8.7 12.1 2.2 2.2 4.5-4.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              Laporin
+            </a>
+          </div>
+          <div class="relative max-w-md">
+            <span class="mb-5 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-xs font-medium text-cyan-100">
+              <span class="h-2 w-2 rounded-full bg-emerald-300"></span>
+              Suara untuk sekolah yang lebih baik
+            </span>
+            <h1 class="text-4xl font-semibold leading-tight tracking-tight xl:text-5xl">
+              Fasilitas baik,<br />
+              belajar pun <span class="text-cyan-300">nyaman.</span>
+            </h1>
+            <p class="mt-5 max-w-sm text-base leading-7 text-slate-300">
+              Laporkan fasilitas sekolah yang perlu diperbaiki dan pantau tindak lanjutnya dalam satu tempat.
+            </p>
+            <div class="mt-9 flex items-center gap-3 text-sm text-slate-300">
+              <span class="flex -space-x-2">
+                <span class="flex h-8 w-8 items-center justify-center rounded-full border-2 border-[#102b4e] bg-amber-200 text-xs font-bold text-amber-900">S</span>
+                <span class="flex h-8 w-8 items-center justify-center rounded-full border-2 border-[#102b4e] bg-teal-200 text-xs font-bold text-teal-900">G</span>
+                <span class="flex h-8 w-8 items-center justify-center rounded-full border-2 border-[#102b4e] bg-blue-200 text-xs font-bold text-blue-900">A</span>
+              </span>
+              <span>Kolaborasi siswa dan sekolah</span>
+            </div>
+          </div>
+          <p class="relative text-xs text-slate-400">© 2026 Laporin · Sistem Pengaduan Fasilitas Sekolah</p>
+        </section>
+
+        <section class="flex items-center justify-center px-6 py-10 sm:px-12 lg:px-12 xl:px-16">
+          <div class="w-full max-w-md">
+            <a href="./login.html" class="mb-10 inline-flex items-center gap-2 text-lg font-bold tracking-tight text-[#102b4e] lg:hidden">
+              <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-cyan-100 text-[#102b4e]">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 3.5 20 7v5.2c0 4.1-2.8 7.8-8 9.3-5.2-1.5-8-5.2-8-9.3V7l8-3.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                  <path d="m8.7 12.1 2.2 2.2 4.5-4.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              Laporin
+            </a>
+            <div class="mb-8">
+              <p class="mb-2 text-sm font-semibold text-cyan-700">Selamat datang kembali</p>
+              <h2 class="text-3xl font-bold tracking-tight text-slate-900">Masuk ke akunmu</h2>
+              <p class="mt-2 text-sm leading-6 text-slate-500">Masuk untuk membuat pengaduan atau melihat perkembangannya.</p>
+            </div>
+
+            <form id="loginForm" class="space-y-5">
+              <div>
+                <label for="loginEmail" class="mb-2 block text-sm font-medium text-slate-700">Email</label>
+                <input
+                  id="loginEmail"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="nama@email.com"
+                  maxlength="100"
+                  required
+                  class="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 hover:border-slate-300 focus:border-cyan-600 focus:ring-4 focus:ring-cyan-600/10"
+                />
+              </div>
+              <div>
+                <div class="mb-2 flex items-center justify-between gap-3">
+                  <label for="loginPassword" class="block text-sm font-medium text-slate-700">Kata sandi</label>
+                  <span class="text-xs text-slate-400">Masukkan kata sandi akunmu</span>
+                </div>
+                <input
+                  id="loginPassword"
+                  name="password"
+                  type="password"
+                  autocomplete="current-password"
+                  placeholder="Masukkan kata sandi"
+                  maxlength="72"
+                  required
+                  class="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 hover:border-slate-300 focus:border-cyan-600 focus:ring-4 focus:ring-cyan-600/10"
+                />
+              </div>
+              <p id="loginMessage" class="hidden rounded-xl bg-rose-50 px-4 py-3 text-sm text-rose-700" role="status" aria-live="polite"></p>
+              <button
+                id="loginSubmitButton"
+                type="submit"
+                class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#12365f] px-5 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-950/10 transition hover:bg-[#0d2949] focus:outline-none focus:ring-4 focus:ring-blue-900/20"
+              >
+                Masuk
+                <svg class="h-4 w-4" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M4.2 10h11.6m-4.7-4.7 4.7 4.7-4.7 4.7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </form>
+
+            <p class="mt-7 text-center text-sm text-slate-500">
+              Belum punya akun?
+              <a href="./register.html" class="font-semibold text-cyan-800 hover:text-cyan-950">Daftar sekarang</a>
+            </p>
+            <p class="mt-8 border-t border-slate-100 pt-5 text-center text-xs text-slate-400">
+              Masuk sebagai admin?
+              <a href="../admin/login.html" class="font-medium text-slate-600 underline decoration-slate-300 underline-offset-4 hover:text-slate-900">Login admin</a>
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="../src/app.js" defer></script>
+  </body>
+</html>
