@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:3000/api";
+const API_BASE_URL = window.LAPORIN_API_BASE_URL;
 const AUTH_TOKEN_KEY = "laporin_token";
 const AUTH_USER_KEY = "laporin_user";
 

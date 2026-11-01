@@ -6,6 +6,7 @@
     <meta name="description" content="Dashboard siswa Laporin untuk mengirim dan memantau pengaduan fasilitas sekolah." />
     <title>Dashboard Siswa — Laporin</title>
     <link rel="stylesheet" href="../src/output.css" />
+    <script src="../src/config.js" defer></script>
     <script src="../src/app.js" defer></script>
   </head>
   <body data-page="user-dashboard" class="min-h-screen bg-slate-50 font-sans text-slate-900 antialiased">
@@ -127,7 +128,7 @@
             <div><label for="reportLocation" class="mb-1.5 block text-sm font-medium text-slate-700">Lokasi fasilitas</label><input id="reportLocation" name="location" type="text" minlength="2" maxlength="150" required placeholder="Contoh: Gedung A, ruang XI-A" class="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm outline-none placeholder:text-slate-400 focus:border-cyan-600 focus:ring-4 focus:ring-cyan-600/10" /></div>
           </div>
           <div><label for="reportDescription" class="mb-1.5 block text-sm font-medium text-slate-700">Deskripsi</label><textarea id="reportDescription" name="description" rows="4" minlength="10" required placeholder="Ceritakan kondisi fasilitas dan kapan masalah terlihat..." class="w-full resize-y rounded-xl border border-slate-200 px-4 py-3 text-sm outline-none placeholder:text-slate-400 focus:border-cyan-600 focus:ring-4 focus:ring-cyan-600/10"></textarea></div>
-          <div id="reportImageField"><label for="reportImage" class="mb-1.5 block text-sm font-medium text-slate-700">Foto pendukung <span class="font-normal text-slate-400">(opsional, maks. 5 MB)</span></label><input id="reportImage" name="image" type="file" accept="image/*" class="block w-full rounded-xl border border-slate-200 text-sm text-slate-500 file:mr-4 file:border-0 file:bg-slate-50 file:px-4 file:py-3 file:text-sm file:font-semibold file:text-slate-700 hover:file:bg-slate-100" /><p id="reportImageHelp" class="mt-1 text-xs text-slate-400">Format gambar saja. Foto tidak dapat diubah setelah laporan dibuat.</p></div>
+          <div id="reportImageField"><label for="reportImage" class="mb-1.5 block text-sm font-medium text-slate-700">Foto pendukung <span class="font-normal text-slate-400">(opsional, maks. 4 MB)</span></label><input id="reportImage" name="image" type="file" accept="image/*" class="block w-full rounded-xl border border-slate-200 text-sm text-slate-500 file:mr-4 file:border-0 file:bg-slate-50 file:px-4 file:py-3 file:text-sm file:font-semibold file:text-slate-700 hover:file:bg-slate-100" /><p id="reportImageHelp" class="mt-1 text-xs text-slate-400">Format gambar saja. Foto tidak dapat diubah setelah laporan dibuat.</p></div>
           <p id="reportFormMessage" class="hidden rounded-xl px-4 py-3 text-sm" role="status" aria-live="polite"></p>
           <div class="flex flex-col-reverse gap-2 border-t border-slate-100 pt-4 sm:flex-row sm:justify-end"><button id="cancelReportButton" type="button" class="rounded-xl border border-slate-200 px-4 py-2.5 text-sm font-semibold text-slate-600 hover:bg-slate-50">Batal</button><button id="submitReportButton" type="submit" class="rounded-xl bg-[#12365f] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#0d2949]">Kirim pengaduan</button></div>
         </form>
